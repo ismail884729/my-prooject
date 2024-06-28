@@ -1,0 +1,14 @@
+<h3>Interactive Sports Event Calendar</h3>
+<div class="center">
+  <div class="form-container">
+    <h2>Login</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input type="text" placeholder="Username" required id="username" formControlName="username">
+      <input type="password" placeholder="Password" required id="password" formControlName="password">
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a routerLink="/register">Register here</a>.</p>
+    <!-- <p>Don't have an account? <a routerLink="/dashbody">Go to dashboard</a>.</p> -->
+  </div>
+</div>
+<!-- <h4 id="demo">enter  password and name</h4> -->

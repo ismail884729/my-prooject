@@ -1,0 +1,30 @@
+<h2>Request a Match</h2>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search...">
+        <button id="search-button">Search</button>
+    </div>
+    <div class="dashboard-links button_container" >
+        <ul>
+            <li><a href="/dashbody">Home</a></li>
+            <!-- <li><a href="registration.html">Registration</a></li> -->
+            <li><a href="/requestmatch">Request Match</a></li>
+            <li><a href="/viewevents">View Events</a></li>
+            <li><a href="/approvematch">Approve Match Request</a></li>
+            <!-- <li><a routerLink="">request ticket</a></li> -->
+            <!-- Add more links as needed -->
+        </ul>
+    </div>
+    <div class="container">
+     
+        <form id="requestMatchForm">
+            <label for="opponent">Select Opponent Coach:</label>
+            <select id="opponent" required>
+                <option value="coach1">Coach 1</option>
+                <option value="coach2">Coach 2</option>
+                <option value="coach3">Coach 3</option>
+            </select>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
